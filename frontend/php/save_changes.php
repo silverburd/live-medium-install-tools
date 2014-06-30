@@ -16,7 +16,7 @@ if (!preg_match('/^(?:[0-9a-fA-F]{2}[:;.]?){6}$/', $mac)) {
 			if ($scripts[$x] != 'custom') {
 				$post = $_POST[$scripts[$x]];
 			}
-			if ($post == "1") {
+			if ($post == "1" && $scripts[$x] != 'custom') {
 				// Step back up three dirs for the symlink.
 				symlink("../../../scripts/$mgroup/$scripts[$x]", "./machines/$mgroup/$mac/$scripts[$x]");
 			} elseif ($scripts[$x] != 'custom') {
