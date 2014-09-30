@@ -64,6 +64,7 @@ echo "<body>
 		}
 	}
 	manage_table($mgroup);
+	log_pop();
 } else {
 	$group= scandir("./machines/");
 	$group_count = count($group);
@@ -74,6 +75,7 @@ echo "<body>
 			manage_table($group[$g]);
 		}
 	}
+	log_pop();
 }
 ?>
 <script>

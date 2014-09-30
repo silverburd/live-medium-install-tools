@@ -125,6 +125,8 @@ function manage_table($mgroup) {
 		}
 	}
 	echo "</table>";
+}
+function log_pop() {
 	echo "<div class=\"backlight\">
 				<div class=\"code_box\">
 					<div id=\"header_pop\">
